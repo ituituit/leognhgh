@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/white_smoke"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_content"
+        style="@style/fill_both_size"
+        android:layout_height="wrap_content"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp" >
+
+        <RelativeLayout
+            android:id="@+id/setting_title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp" >
+
+            <TextView
+                android:id="@+id/login_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/bookmark_my"
+                android:textColor="?attr/gray_light_text"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_title_bar"
+            android:orientation="vertical" >
+
+            <include layout="@layout/gray_line" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/login_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

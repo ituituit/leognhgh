@@ -1,0 +1,74 @@
+{
+   "subscriptions": {
+        "defaultOrderMenuItems":["头条","民生","公告","城建","便民","社会","美图","旅游","美食","购物","情感"],
+        "channels": {
+        	"LocalHost":
+            {
+                "channelName":"LocalHost",
+   				"channelUrl":"http://192.168.1.125:8080/javaweb/clientNews?id=headline",
+	        },
+        	"头条":
+            {
+                "channelName":"头条",
+   				"channelUrl":"http://121.41.100.87:8080/javaweb/clientNews?id=headline",
+	        },
+        	"民生":
+            {
+                "channelName":"民生",
+   				"channelUrl":"http://121.41.100.87:8080/javaweb/clientNews?id=resident",
+	        },
+        	"公告":
+            {
+                "channelName":"公告",
+   				"channelUrl":"http://121.41.100.87:8080/javaweb/clientNews?id=commercials",
+	        },
+        	"城建":
+            {
+                "channelName":"城建",
+   				"channelUrl":"http://121.41.100.87:8080/javaweb/clientNews?id=build",
+	        },
+        	"便民":
+            {
+                "channelName":"便民",
+   				"channelUrl":"http://121.41.100.87:8080/javaweb/clientNews?id=convenient",
+	        },
+        	"社会":
+            {
+                "channelName":"社会",
+   				"channelUrl":"http://121.41.100.87:8080/javaweb/clientNews?id=society",
+	        },
+        	"美图":
+            {
+                "channelName":"美图",
+   				"channelUrl":"http://121.41.100.87:8080/javaweb/clientNews?id=image",
+	        },
+        	"旅游":
+            {
+                "channelName":"旅游",
+   				"channelUrl":"http://121.41.100.87:8080/javaweb/clientNews?id=travel",
+	        },
+        	"美食":
+            {
+                "channelName":"美食",
+   				"channelUrl":"http://121.41.100.87:8080/javaweb/clientNews?id=food",
+	        },
+        	"购物":
+            {
+                "channelName":"购物",
+   				"channelUrl":"http://121.41.100.87:8080/javaweb/clientNews?id=shopping",
+	        },
+        	"情感":
+            {
+                "channelName":"情感",
+   				"channelUrl":"http://121.41.100.87:8080/javaweb/clientNews?id=emotion",
+	        },
+        },
+        "version": "1.0.0",
+        "defaultChannel": ["头条"]
+    },
+    "version":"1.0.0",
+    "coverStory":"http://121.41.100.87:8080/javaweb/cover_new.json",
+    "upgrade":"http://121.41.100.87:8080/javaweb/upgrade.json",
+    "newGallery":"http://121.41.100.87:8080/javaweb/defaultList",
+    "errorReport":"http://121.41.100.87:8080/javaweb/"
+}

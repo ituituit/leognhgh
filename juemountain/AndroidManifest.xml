@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.juetc.news"
+    android:versionCode="8"
+    android:versionName="1.1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.weiyun.news.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weiyun.news.SimpleImageActivity"
+            android:label="@string/title_activity_news" />
+
+        <service android:name="com.juetc.VersionManager" >
+            <intent-filter>
+                <action android:name="com.weiyun.VersionManager" />
+            </intent-filter>
+        </service>
+        <service android:name="com.juetc.OfflineManager" >
+            <intent-filter>
+                <action android:name="com.weiyun.OfflineManager" />
+            </intent-filter>
+        </service>
+        <service android:name="com.weiyun.news.BaseService" >
+            <intent-filter>
+                <action android:name="com.weiyun.news.BaseService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.weiyun.news.NewsActivity"
+            android:label="@string/title_activity_news"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.weiyun.news.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.weiyun.news.HomeListActivity"
+            android:label="@string/title_activity_home_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.weiyun.news.BookmarkActivity"
+            android:label="@string/title_activity_home_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.weiyun.news.HomeNewsActivity"
+            android:label="@string/title_activity_home_news"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.weiyun.news.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.weiyun.news.DetailGalleryActivity"
+            android:label="@string/title_activity_detail_gallery"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1103585173" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weiyun.news.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.weiyun.news.GiftActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name="com.weiyun.news.LoginDetailActivity"
+            android:label="@string/title_activity_login_detail" >
+        </activity>
+        <activity
+            android:name="com.weiyun.news.ChannelSettingActivity"
+            android:label="@string/title_activity_channel_setting" >
+        </activity>
+        <activity
+            android:name="com.weiyun.news.LogOutActivity"
+            android:label="@string/login_information" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+    </application>
+
+</manifest>

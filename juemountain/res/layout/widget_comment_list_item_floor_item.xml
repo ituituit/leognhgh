@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/layout_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="14.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingTop="12.0dip" >
+
+        <TextView
+            android:id="@+id/floor_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/nickname"
+            android:layout_marginRight="11.0dip"
+            android:text="2"
+            android:textColor="@color/comment_from"
+            android:textSize="13.0sp" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="张三"
+            android:textColor="@color/comment_nickname"
+            android:textSize="13.0sp" />
+
+        <TextView
+            android:id="@+id/dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/nickname"
+            android:layout_toRightOf="@id/nickname"
+            android:text="张三右"
+            android:textColor="@color/comment_from"
+            android:textSize="13.0sp" />
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/nickname"
+            android:layout_toRightOf="@+id/dot"
+            
+            android:gravity="left"
+            android:text="来自"
+            android:textColor="@color/comment_from"
+            android:textSize="13.0sp" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/floor_number"
+            android:layout_marginBottom="21.0dip"
+            android:layout_marginRight="11.0dip"
+            android:layout_marginTop="18.0dip"
+            android:text="评论内容"
+            android:textColor="@color/comment_content"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/floor_loadmore_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center"
+        android:text="隐藏了 条评论，点击展开"
+        android:textColor="@color/comment_from"
+        android:textSize="16.0sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

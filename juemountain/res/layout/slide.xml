@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    style="@style/fillh_auto_size"
+    android:background="@color/black" >
+
+    <com.weiyun.news.PageGallery
+        android:id="@+id/gallery"
+        style="@style/fill_both_size"
+        android:spacing="9.0dip" />
+
+    
+
+    <LinearLayout
+        android:id="@+id/sldie_tips_bg"
+        style="@style/fillh_auto_size"
+        android:layout_alignBottom="@+id/gallery"
+        android:layout_height="150dp"
+        android:background="@drawable/slide_tips_bg">
+
+        <LinearLayout
+            android:id="@+id/slide_tips_module"
+            style="@style/fillh_auto_size"
+            android:paddingBottom="1dip" >
+
+            <TextView
+                android:id="@+id/current_page"
+                style="@style/auto_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15.0dip"
+                android:text=""
+                android:textColor="@color/slide_title_color"
+                android:textSize="22.0sp" />
+
+            <TextView
+                android:id="@+id/max_page"
+                style="@style/auto_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10.0dip"
+                android:text=""
+                android:textColor="@color/slide_title_color"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/auto_size"
+                android:background="@drawable/slide_divider"
+                android:lineSpacingExtra="3.0dip"
+                android:lineSpacingMultiplier="1.1"
+                android:maxLines="7"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="12.0dip"
+                android:scrollbars="none"
+                android:singleLine="false"
+                android:text="@string/loading"
+                android:textColor="@color/slide_title_color"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="11dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/image_press"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/image"
+                    style="@style/image_thumbinal"
+                    android:layout_gravity="center_vertical"
+                    android:background="?attr/white_smoke"
+                    android:src="@drawable/icon_loading" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="11dp"
+            android:orientation="vertical" >
+
+            <com.weiyun.util.AutoResizeTextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-3dp"
+                android:layout_marginTop="-4dp"
+                android:singleLine="false"
+                android:text="@string/login_ready"
+                android:textColor="?attr/title_blue"
+                android:textSize="18sp" />
+
+            <include layout="@layout/activity_main_news_buttom_infomation" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_content"
+        style="@style/fillh_auto_size"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_space"
+        android:paddingRight="@dimen/margin_space" >
+        <include layout="@layout/gray_line" />
+    </RelativeLayout>
+
+</LinearLayout>

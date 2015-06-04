@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fill_both_size"
+    android:background="?attr/white_smoke" >
+
+    <include
+        android:id="@+id/login_content"
+        layout="@layout/login_setting" />
+
+    <com.weiyun.news.DetailSettingView
+        android:id="@+id/detail_setting_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setting_rotate_fuction"
+        android:layout_below="@+id/login_content"
+        android:background="?attr/white_smoke" >
+    </com.weiyun.news.DetailSettingView>
+
+    <RelativeLayout
+        android:id="@+id/setting_rotate_fuction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="70dp" >
+
+            <include layout="@layout/gray_line" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/setting_fuction_midline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/setting_nightmode_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="33.0dip"
+            android:layout_toLeftOf="@+id/setting_fuction_midline"
+            android:text="夜间"
+            android:textColor="?attr/gray_light_text"
+            android:textSize="17.0sp" />
+
+        <ImageView
+            android:id="@+id/setting_offline_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33.0dip"
+            android:layout_toRightOf="@+id/setting_fuction_midline"
+            android:src="@drawable/offline_icon" />
+
+        <ImageView
+            android:id="@+id/setting_nightmode_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/setting_nightmode_text"
+            android:paddingRight="13.0dip"
+            android:src="@drawable/moon_icon" />
+
+        <TextView
+            android:id="@+id/setting_offline_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/setting_offline_open"
+            android:paddingLeft="13.0dip"
+            android:text="离线"
+            android:textColor="?attr/gray_light_text"
+            android:textSize="17.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

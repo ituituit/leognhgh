@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ifeng="http://schemas.android.com/apk/res/com.ifeng.news2"
+    style="@style/fillh_auto_size"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?attr/white" >
+
+    <RelativeLayout
+        android:id="@+id/title_moudle"
+        style="@style/fillh_auto_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4.0dip"
+        android:paddingLeft="@dimen/margin_space"
+        android:paddingRight="@dimen/margin_space"
+        android:paddingTop="12.0dip" >
+
+        <com.weiyun.util.AutoResizeTextView
+            android:id="@id/title"
+            style="@style/channel_list_new_topic"
+            android:textSize="@dimen/channel_list_new_message_title_size_small" />
+
+        <RelativeLayout
+            android:id="@+id/center_wrapper"
+            style="@style/fillh_auto_size"
+            android:layout_below="@id/title"
+            android:gravity="center"
+            android:paddingTop="5.0dip" >
+
+            <!--
+                 <include
+                style="@style/fillh_auto_size"
+                layout="@layout/topic_item_slide_title"
+                android:paddingTop="4.0dip" />
+            -->
+
+            <ImageView
+                android:id="@+id/default_thumbnail"
+                style="@style/fillh_three_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_loading" />
+
+            <ImageView
+                android:id="@+id/channel_right_image"
+                style="@style/fillh_three_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_loading" />
+
+            <ImageView
+                android:id="@+id/folder"
+                style="@style/fillh_three_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:src="@drawable/icon_loading" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/channel_left_message"
+            style="@style/channel_list_new_message"
+            android:layout_below="@+id/center_wrapper"
+            android:layout_marginRight="6.0dip"
+            android:layout_marginTop="2dp"
+            android:paddingBottom="6.0dip"
+            android:text="channel_left_message" />
+
+        <TextView
+            android:id="@+id/spread_placeholder"
+            style="@style/auto_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/center_wrapper"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="2.0dip"
+            android:text="spread_placeholder"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/channel_right_comment_layer"
+            android:layout_width="wrap_content"
+            android:layout_height="24.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/center_wrapper"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="2dp" >
+
+            <TextView
+                android:id="@+id/channel_left_comment"
+                style="@style/channel_list_new_message"
+                android:drawableRight="@drawable/ic_launcher"
+                android:text="channel_left_living_tv" />
+
+            <ImageView
+                android:id="@+id/channel_left_tag"
+                style="@style/auto_size"
+                android:layout_marginLeft="6.0dip"
+                android:paddingTop="2dp"
+                android:src="@drawable/ic_launcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/channel_left_living"
+            android:layout_width="fill_parent"
+            android:layout_height="25.0dip"
+            android:layout_below="@id/center_wrapper"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/channel_right_comment_layer"
+            android:layout_toRightOf="@+id/channel_left_message"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5.0dip" >
+
+            <TextView
+                android:id="@+id/channel_left_living_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="channel_left_living_tv"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/loadding_gif"
+                style="@style/auto_size"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="6.0dip"
+                android:background="@drawable/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/channel_list_type_icon"
+                style="@style/auto_size"
+                android:paddingTop="2dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--
+         <include
+        android:id="@+id/channel_slide_comment"
+        style="@style/fillh_auto_size"
+        android:layout_below="@+id/title_moudle"
+        layout="@layout/channel_list_new_comment_module" />
+    -->
+
+    <LinearLayout
+        android:id="@+id/channel_list_new_topic_item_wrapper"
+        style="@style/fillh_auto_size"
+        android:layout_marginRight="10.0dip"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:id="@+id/top_divider_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_space"
+        android:layout_marginRight="@dimen/margin_space"
+        android:background="@color/channel_list_divider_color" />
+
+</RelativeLayout>

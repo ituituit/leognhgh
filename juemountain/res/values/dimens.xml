@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">19dp</dimen>
+    <dimen name="activity_vertical_margin">19dp</dimen>
+    <dimen name="margin_space">11.0dip</dimen>
+    <dimen name="head_size">27.0dip</dimen>
+    
+    <dimen name="channel_list_new_message_title_size_small">17.0dip</dimen>
+    <dimen name="account_name_top">5.0dip</dimen>
+    <dimen name="gridview_item_w">47dp</dimen>
+    <dimen name="textsize_gift_login">30sp</dimen>
+
+</resources>

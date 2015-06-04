@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/fillh_auto_size"
+        android:layout_margin="11dp"
+        android:orientation="vertical" >
+
+        <com.weiyun.util.AutoResizeTextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="-3dp"
+            android:layout_marginTop="-5dp"
+            android:text=""
+            android:textColor="?attr/title_blue"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="11dp" >
+
+            <LinearLayout
+                android:id="@+id/image_press"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/image"
+                    style="@style/image_thumbinal_big"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:background="?attr/white_smoke"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_loading" />
+
+                <ImageView
+                    android:id="@+id/image2"
+                    style="@style/image_thumbinal_big"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_weight="1"
+                    android:background="?attr/white_smoke"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_loading" />
+
+                <ImageView
+                    android:id="@+id/image3"
+                    style="@style/image_thumbinal_big"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:background="?attr/white_smoke"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_loading" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/activity_main_news_buttom_infomation" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_content"
+        style="@style/fillh_auto_size"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_space"
+        android:paddingRight="@dimen/margin_space" >
+        <include layout="@layout/gray_line" />
+    </RelativeLayout>
+
+</LinearLayout>

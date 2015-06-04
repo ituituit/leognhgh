@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.weiyun.news.ChannelSettingActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/relSpace"
+        android:layout_below="@+id/fraTitle"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.weiyun.news.DragGridView
+            android:id="@+id/grd_electron"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:animationCache="true"
+            android:cacheColorHint="#00000000"
+            android:horizontalSpacing="@dimen/margin_space"
+            android:layoutAnimation="@anim/layout_animation_row_down_slide"
+            android:listSelector="#00000000"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/margin_space" />
+
+        <LinearLayout
+            android:id="@+id/split_tag"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_space"
+            android:layout_marginTop="@dimen/margin_space"
+            android:background="?attr/gray_light_text"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_space" >
+
+                <TextView
+                    style="@style/auto_size"
+                    android:text="更多频道"
+                    android:textColor="?attr/white" />
+
+                <TextView
+                    style="@style/auto_size"
+                    android:layout_width="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:text="点击／拖动添加频道"
+                    android:textColor="?attr/white"
+                    android:textSize="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.weiyun.news.DragGridView
+            android:id="@+id/more_channel"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:animationCache="true"
+            android:cacheColorHint="#00000000"
+            android:gravity="fill"
+            android:horizontalSpacing="10.0dip"
+            android:layoutAnimation="@anim/layout_animation_row_down_slide"
+            android:listSelector="#00000000"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10.0dip" />
+    </LinearLayout>
+
+</RelativeLayout>

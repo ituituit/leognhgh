@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr_value="http://schemas.android.com/apk/res/"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.weiyun.scroller.MyTitleView
+            android:id="@+id/mtv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            attr_value:defaultScreen="0"
+            attr_value:title_name="Photo1.zip"
+            attr_value:title_name1="Photo2.zip"
+            attr_value:title_name2="Photo3.zip"
+            attr_value:title_name3="Photo4.zip"
+            attr_value:title_name4="Photo5.zip" >
+        </com.weiyun.scroller.MyTitleView>
+
+        <ImageView
+            android:id="@+id/gift_button"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/gift4"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+</LinearLayout>

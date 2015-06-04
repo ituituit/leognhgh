@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/conent_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/white_smoke"
+        android:padding="30dp" >
+
+        <TableRow android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/bookmark_my"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/logo_bookmark"
+                    android:textColor="?attr/gray_dark_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/channel_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/logo_channel"
+                    android:textColor="?attr/gray_dark_text" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="25dp"
+             android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/story_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/logo_story"
+                    android:textColor="?attr/gray_dark_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/comment_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/logo_comment"
+                    android:textColor="?attr/gray_dark_text" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="title_attr">
+        <attr name="title_name" format="string" />
+        <attr name="title_name1" format="string" />
+        <attr name="title_name2" format="string" />
+        <attr name="title_name3" format="string" />
+        <attr name="title_name4" format="string" />
+    </declare-styleable>
+    <declare-styleable name="Workspace">
+        <attr name="defaultScreen" format="integer" />
+        <attr name="cellCountX" format="integer" />
+        <attr name="cellCountY" format="integer" />
+    </declare-styleable>
+
+    <attr name="title_blue" format="color" />
+    <attr name="white" format="color" />
+    <attr name="light_gray" format="color" />
+    <attr name="black_overlay" format="color" />
+    <attr name="gray_light_text" format="color" />
+    <attr name="gray_dark_text" format="color" />
+    <attr name="white_smoke" format="color" />
+    <attr name="rect_big" format="reference" />  
+	<attr name="themeName" format="string"/>
+</resources>
